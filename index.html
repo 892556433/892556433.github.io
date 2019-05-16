@@ -2,15 +2,148 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<script src="js/jquery-1.7.2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-	<title>首页</title>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jQueryRotate.js"></script>
+	<style>
+		#charts{width:800px;height:600px;margin:0 auto;}
+		.market_map_title{font-size:32px;text-align:left;padding-left:50px;}
+	</style>
+	<title>首页-陶金虎的博客</title>
 </head>
 <body>
-	<header>
-		<h1>hellow world!wqqqqqqqq</h1>
-	</header>
+	<div class="content">
+		<div class="gsjj-top">
+			<div class="gsjj-img">
+				<img class="gsjj-img1" src="img/index/About_Recruit.png" alt="">
+				<img class="gsjj-img2" src="img/index/About_RecruitWritten.png" alt="">
+				<div class="mask"></div>
+			</div>
+		</div>
+		<div class="index-us-content-bottom">
+			<div class="index-left">
+				<div class="index-left-img">
+					<img src="img/index/About_RecruitLogo.png" alt="">
+				</div>
+				<p><i>name:</i>jeepTao</p>
+				<p><i>wechat:</i>qq892556433</p>
+				<p><i class="index-left-i-3">邮箱:</i>tjh892556433@163.com</p>
+			</div>
+			<div class="index-right">
+				<div class="index-right-list1">
+					<div class="index-tit-name">主题名称</div>
+					<div class="index-tit-time">发布时间</div>
+					<div class="index-tit-city">城市</div>
+				</div>
+				<div class="index-right-list" >
+					<div class="index-list-top" listid="0">
+						<div class="index-list-name">水处理工艺工程师</div>
+						<div class="index-list-time">2019-3-8</div>
+						<div class="index-list-city">北京</div>
+						<div class="index-list-icon"><img src="img/index/About_RecruitUnopened.png" alt=""></div>
+					</div>
+					<div class="index-list-bottom">
+						<h1>岗位职责：</h1>
+						<p>1.负责市政污水处理项目工艺技术方案编制、工程项目初步设计及施工图设计；</p>
+						<p>2.参与项目的标书、可行性研究的编写及其他与市场开发相关的技术支持工作；</p>
+						<p>3.安排及全面把握设计工作的开展，跟踪项目设计进度；</p>
+						<p>4.为前期项目尽职调查提供技术服务，解决客户技术问题，为设备招标采购提供技术服务；</p>
+						<p>5.上级领导安排的其他工作.</p>
+						<h2>任职资格：</h2>
+						<p>1.环境工程或相关专业，本科及以上学历；</p>
+						<p>2.三年以上市政污水处理技术工作经验，具有污水处理厂、污水管网、受纳水体监控等工作经验者优先；</p>
+						<p>3.熟悉各种污水处理工艺，有污水处理设计实践经验。</p>
+						<p>4.具有一定的文笔功底；</p>
+						<p>5.熟练使用OFFICE、AutoCAD、PPT等办公软件；</p>
+						<p>6.具有良好的沟通能力和团队合作精神</p>
+						<p>工作地点：北京</p>
+					</div>
+				</div>
+				<div class="index-right-list" >
+					<div class="index-list-top" listid="1">
+						<div class="index-list-name">自控工程师</div>
+						<div class="index-list-time">2019-3-8</div>
+						<div class="index-list-city">北京</div>
+						<div class="index-list-icon"><img src="img/index/About_RecruitUnopened.png" alt=""></div>
+					</div>
+					<div class="index-list-bottom">
+						<h1>岗位职责：</h1>
+						<p>1.有水处理行业自控专业5年以上的实践经验；</p>
+						<p>2.有完成大型PLC编程的项目；</p>
+						<p>3.熟练上位软件；</p>
+						<p>4.项目方案编写；</p>
+						<p>5.善于沟通。</p>
+					</div>
+				</div>
+				<div class="index-right-list" >
+					<div class="index-list-top" listid="2">
+						<div class="index-list-name">环境工程工程师</div>
+						<div class="index-list-time">2019-3-8</div>
+						<div class="index-list-city">北京</div>
+						<div class="index-list-icon"><img src="img/index/About_RecruitUnopened.png" alt=""></div>
+					</div>
+					<div class="index-list-bottom" >
+						<h1>职位描述：</h1>
+						<p>1.辨别和跟踪项目，负责设计院和潜在客户的联系；</p>
+						<p>2.参与准备技术标书并负责编制商务标书；</p>
+						<p>3.完成个人销售任务；</p>
+						<p>4.管理个人客户和项目；</p>
+						<p>5.与内外部合作伙伴保持良好的合作关系。</p>
+						<h2>任职资格：</h2>
+						<p>1.环境工程本科或以上学历，水处理或环境工程专业优先；</p>
+						<p>2.至少5年以上水处理领域设备或项目销售经验；</p>
+						<p>3.有拓展和跟进项目的能力；</p>
+						<p>4.良好的沟通表达能力和团队合作意识；</p>
+						<p>5.良好的书面和口头沟通能力以及人际交往技能；</p>
+						<p>6.能适应弹性工作时间和经常出差。</p>
+						<p>7.熟悉污水处理厂工艺及参数，由专家带领下进行污水处理工艺优化的工作。</p>
+						<p>工作地点：北京</p>
+					</div>
+				</div>
+				<div class="index-right-list">
+					<div class="index-list-top" listid="3">
+						<div class="index-list-name">项目采购工程师</div>
+						<div class="index-list-time">2019-3-8</div>
+						<div class="index-list-city">北京</div>
+						<div class="index-list-icon"><img src="img/index/About_RecruitUnopened.png" alt=""></div>
+					</div>
+					<div class="index-list-bottom">
+						<h1>技能要求：</h1>
+						<p>采购，供应链，质检，审核，品控，跟单</p>
+						<h2>岗位职责：</h2>
+						<p>1、负责公司采购工作，包括：询价、比价、签定采购合同、验收、评估及反馈汇总工作；</p>
+						<p>2、完善公司采购制度，制定并优化采购流程，控制采购质量与成本；</p>
+						<p>3、组织对供应商进行评估、认证、管理及考核；</p>
+						<p>4、协调公司各部门间工作。</p>
+						<h2>任职要求：</h2>
+						<p>1、有采购相关工作经验；</p>
+						<p>2、熟悉采购流程，熟悉供应商评估、考核；</p>
+						<p>3、具备良好部门内和跨部门的组织和协调能力，良好的谈判、人际沟通能力，团队协作能力强；</p>
+						<p>4、具备较强职业道德素质</p>
+						<p>工作地点：北京</p>
+					</div>
+				</div>
+				<div class="index-right-list">
+					<div class="index-list-top" listid="4">
+						<div class="index-list-name">项目部助理</div>
+						<div class="index-list-time">2019-3-8</div>
+						<div class="index-list-city">北京</div>
+						<div class="index-list-icon"><img src="img/index/About_RecruitUnopened.png" alt=""></div>
+					</div>
+					<div class="index-list-bottom">
+						<h1>岗位职责:</h1>
+						<p>1.协助部门简历工作，含项目管理，技术管理，质量管理；</p>
+						<p>2.销售投标报价；</p>
+						<p>3.文档管理，文档制作（PPT),合同管理。 </p>
+						<h2>任职要求：</h2>
+						<p>环境工程本科及以上学历；</p>
+						<p>工作地点：北京</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-<script src="js/index.js?v=0.0.1"></script>
+<script src="js/index.js"></script>
 </html>
