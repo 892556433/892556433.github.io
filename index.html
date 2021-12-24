@@ -1,319 +1,289 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html class=" js-no-overflow-scrolling">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>烟花</title>
-    <style>
-        html,
-        body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: #000;
-        }
+<meta charset="utf-8">
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>待查收的汪困困</title>
+<link rel="stylesheet" type="text/css" href="css/page-animation.css">
+<link rel="stylesheet" type="text/css" href="css/H5FullscreenPage.css">
+<style type="text/css">
+    
+    html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: arial;
+        text-align: center;
+    }
+    
+    * {
+        margin:0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    body {
+        max-width: 640px;
+        margin: auto;
+    }
+</style>
 
-        #canvas {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
+<body class="H5FullscreenPage">
+    <!--  --> 
+    <div class="H5FullscreenPage-wrap">
+        <!--  --> 
+        <div class="item item1">
+            <!-- 金色 -->
+            <!-- <div class="part rollInLeft shang_img"> 
+                <img src="img/2.png" alt=""> 
+            </div>
+            <div class="part rollInRight shang_img shang_img_b">
+                <img src="img/21.png" alt="">
+            </div> -->
+            <!-- 线条 -->
+            <!-- <div class="part top_Xial slideUp" data-delay="400"></div>
+            <div class="part top_Xial top_Xial_b slideDown" data-delay="400"></div> -->
+            <!--hua  金花  -->
+            <div class="part fadeIn jinse_hua" data-delay="1000"> </div>
+            <div class="part fadeIn jinse_hua jinse_hua_x" data-delay="1000"></div> 
+            <!-- 叶子 --> 
+            <div class="part slideLeft yezi_zuo"></div>
+            <div class="part slideLeft yezi_zuo yezi_zuo_zq"></div>
+            <div class="part slideDown yezi_zuo_xx"></div>
+            <div class="part slideDown yezi_zuo_yrx"></div>
+            <div class="part zoomIn piao_gif"  data-delay="1500">
+                <img src="img/jingy.gif" alt="">
+            </div>
+            <!-- 中间 -->
+            <div class="part fadeIn kuang_nieg" data-delay="800">
+                <img src="img/19.png" alt="">
+            </div>
+            <div class="part fadeIn kuang_nieg" data-delay="1000">
+                <img class="nie" src="img/19.png" alt="">
+            </div>
+            <!-- 中间叶子 -->
+            <!-- <div class="part fadeIn yezi_zhongk" data-delay="1300"></div>
+            <div class="part fadeIn yezi_zhongk_x" data-delay="1300"></div> -->
+            <!-- 字 -->
+            <div class="part zhongjiek_Ge" data-delay="1800">
+                <img src="img/9.png" alt="">
+            </div>
+            <div class="part zhongjiek_Ge" data-delay="1800">
+                <img class="nio" src="img/1.png" alt="">
+            </div>
+            <!-- 文字 -->
+            <div class="part xinniang_xinlang" data-delay="1800">
+                <p>汪碧瑶</p>
+                <dd>汪困困，汪饿饿，汪腿腿，汪瘦瘦</dd>
+                <dd>2021/11/5</dd>
+                <span>当我瞭望星空时，你会不会也在瞭望同一片星空呢？</span>
+            </div>
+            <!-- 修改 -->
+            <!-- <div class="xiugai_nige"></div> -->
+           
+            <!--  -->
+            <!-- <div class="part part1 fadeIn" data-delay="1000"> </div>
+            <div class="part part2 fadeIn"></div> -->
+        </div>
+        <!--  -->
+        <div class="item item2">
+            <!-- 金色 -->
+            <div class="part rollInLeft shang_img"> 
+                <img src="img/2.png" alt="">
 
-<body>
-    <canvas id="canvas"></canvas>
+            </div>
+            <div class="part rollInRight shang_img shang_img_b">
+                <img src="img/21.png" alt="">
+            </div>
+            <!-- 线条 -->
+            <div class="part top_Xial slideUp" data-delay="400"></div>
+            <div class="part top_Xial top_Xial_b slideDown" data-delay="400"></div>
+            <!--hua  金花  -->
+            <div class="part fadeIn jinse_hua" data-delay="1000"> </div>
+            <div class="part fadeIn jinse_hua jinse_hua_x" data-delay="1000"></div> 
+            <!-- 叶子 --> 
+            <div class="part slideLeft yezi_zuo"></div>
+            <div class="part slideLeft yezi_zuo yezi_zuo_zq"></div>
+            <div class="part slideDown yezi_zuo_xx"></div>
+            <div class="part slideDown yezi_zuo_yrx"></div>
+            <div class="part zoomIn piao_gif"  data-delay="1500" style="    width: 100%;
+            height: 100%;
+            top: 0;">
+                <img src="img/jingy.gif" alt="">
+            </div>
+            <!-- 中间 -->
+            <div class="part fadeIn kuang_nieg" data-delay="800">
+                <img src="img/19.png" alt="">
+            </div>
+            <div class="part fadeIn kuang_nieg" data-delay="1000">
+                <img class="nie" src="img/19.png" alt="">
+            </div>
+            <!-- 中间叶子 -->
+            <div class="part fadeIn yezi_zhongk" data-delay="1300"></div>
+            <div class="part fadeIn yezi_zhongk_x" data-delay="1300"></div>
+            <!-- 字 -->
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="1800">
+                <div class="rentx">
+                    <img src="img/biyao.jpg" alt="">
+                </div>
+            </div> 
+            <!-- 文字 -->
+            <div class="part xinniang_xinlang" data-delay="1800"   >
+                <p>看了你很多照片<br>最后还是挑了这张</p>
+                <dd style="    line-height: .4rem; padding-top:.2rem;">一丝俏皮，一丝成熟，一丝可爱，一丝幽美，<br>你拥有会长大的幸福<br>一天比一天像公主，梦都被满足</dd>
+                <!-- <span>You two are the prince and princess in a fairy tale and may you live happily everafter!</span> -->
+            </div>
+            <!--  --> 
+            <!-- 修改 -->
+            <div class="xiugai_nige" style="    left: .3rem;top: 5.8rem;"></div>
+            <!--  -->
+        </div>
+        <!--  -->
+        <div class="item item3">
+            <!-- 金色 -->
+            <div class="part rollInLeft shang_img"> 
+                <img src="img/2.png" alt="">
 
-    <script>
-        function initVars() {
-            pi = Math.PI;
-            ctx = canvas.getContext("2d");
-            canvas.width = canvas.clientWidth;
-            canvas.height = canvas.clientHeight;
-            cx = canvas.width / 2;
-            cy = canvas.height / 2;
-            playerZ = -25;
-            playerX = playerY = playerVX = playerVY = playerVZ = pitch = yaw = pitchV = yawV = 0;
-            scale = 600;
-            seedTimer = 0;
-            seedInterval = 5, seedLife = 100;
-            gravity = .02;
-            seeds = new Array();
-            sparkPics = new Array();
-            s = "https://cantelope.org/NYE/";
-            for (i = 1; i <= 10; ++i) {
-                sparkPic = new Image();
-                sparkPic.src = s + "spark" + i + ".png";
-                sparkPics.push(sparkPic);
-            }
-            sparks = new Array();
-            pow1 = new Audio(s + "pow1.ogg");
-            pow2 = new Audio(s + "pow2.ogg");
-            pow3 = new Audio(s + "pow3.ogg");
-            pow4 = new Audio(s + "pow4.ogg");
-            frames = 0;
-        }
-
-        function rasterizePoint(x, y, z) {
-            var p, d;
-            x -= playerX;
-            y -= playerY;
-            z -= playerZ;
-            p = Math.atan2(x, z);
-            d = Math.sqrt(x * x + z * z);
-            x = Math.sin(p - yaw) * d;
-            z = Math.cos(p - yaw) * d;
-            p = Math.atan2(y, z);
-            d = Math.sqrt(y * y + z * z);
-            y = Math.sin(p - pitch) * d;
-            z = Math.cos(p - pitch) * d;
-            var rx1 = -1000, ry1 = 1, rx2 = 1000, ry2 = 1, rx3 = 0, ry3 = 0, rx4 = x, ry4 = z, uc = (ry4 - ry3) * (rx2 - rx1) - (rx4 - rx3) * (ry2 - ry1);
-            if (!uc) return { x: 0, y: 0, d: -1 };
-            var ua = ((rx4 - rx3) * (ry1 - ry3) - (ry4 - ry3) * (rx1 - rx3)) / uc;
-            var ub = ((rx2 - rx1) * (ry1 - ry3) - (ry2 - ry1) * (rx1 - rx3)) / uc;
-            if (!z) z = .000000001;
-            if (ua > 0 && ua < 1 && ub > 0 && ub < 1) {
-                return {
-                    x: cx + (rx1 + ua * (rx2 - rx1)) * scale,
-                    y: cy + y / z * scale,
-                    d: Math.sqrt(x * x + y * y + z * z)
-                };
-            } else {
-                return {
-                    x: cx + (rx1 + ua * (rx2 - rx1)) * scale,
-                    y: cy + y / z * scale,
-                    d: -1
-                };
-            }
-        }
-
-        function spawnSeed() {
-            seed = new Object();
-            seed.x = -50 + Math.random() * 100;
-            seed.y = 25;
-            seed.z = -50 + Math.random() * 100;
-            seed.vx = .1 - Math.random() * .2;
-            seed.vy = -1.5;
-            seed.vz = .1 - Math.random() * .2;
-            seed.born = frames;
-            seeds.push(seed);
-        }
-
-        function splode(x, y, z) {
-            t = 5 + parseInt(Math.random() * 150);
-            sparkV = 1 + Math.random() * 2.5;
-            type = parseInt(Math.random() * 3);
-            switch (type) {
-                case 0:
-                    pic1 = parseInt(Math.random() * 10);
-                    break;
-                case 1:
-                    pic1 = parseInt(Math.random() * 10);
-                    do {
-                        pic2 = parseInt(Math.random() * 10);
-                    } while (pic2 == pic1);
-                    break;
-                case 2:
-                    pic1 = parseInt(Math.random() * 10);
-                    do {
-                        pic2 = parseInt(Math.random() * 10);
-                    } while (pic2 == pic1);
-                    do {
-                        pic3 = parseInt(Math.random() * 10);
-                    } while (pic3 == pic1 || pic3 == pic2);
-                    break;
-            }
-            for (m = 1; m < t; ++m) {
-                spark = new Object();
-                spark.x = x; spark.y = y; spark.z = z;
-                p1 = pi * 2 * Math.random();
-                p2 = pi * Math.random();
-                v = sparkV * (1 + Math.random() / 6)
-                spark.vx = Math.sin(p1) * Math.sin(p2) * v;
-                spark.vz = Math.cos(p1) * Math.sin(p2) * v;
-                spark.vy = Math.cos(p2) * v;
-                switch (type) {
-                    case 0:
-                        spark.img = sparkPics[pic1]; break;
-                    case 1:
-                        spark.img = sparkPics[parseInt(Math.random() * 2) ? pic1 : pic2];
-                        break;
-                    case 2:
-                        switch (parseInt(Math.random() * 3)) {
-                            case 0: spark.img = sparkPics[pic1]; break;
-                            case 1: spark.img = sparkPics[pic2]; break;
-                            case 2: spark.img = sparkPics[pic3]; break;
-                        }
-                        break;
-                }
-                spark.radius = 25 + Math.random() * 50;
-                spark.alpha = 1;
-                spark.trail = new Array();
-                sparks.push(spark);
-            }
-            switch (parseInt(Math.random() * 4)) {
-                case 0: pow = new Audio(s + "pow1.ogg"); break;
-                case 1: pow = new Audio(s + "pow2.ogg"); break;
-                case 2: pow = new Audio(s + "pow3.ogg"); break;
-                case 3: pow = new Audio(s + "pow4.ogg"); break;
-            }
-            d = Math.sqrt((x - playerX) * (x - playerX) + (y - playerY) * (y - playerY) + (z - playerZ) * (z - playerZ));
-            pow.volume = 1.5 / (1 + d / 10);
-            // pow.play();
-        }
-
-        function doLogic() {
-            if (seedTimer < frames) {
-                seedTimer = frames + seedInterval * Math.random() * 10;
-                spawnSeed();
-            }
-            for (i = 0; i < seeds.length; ++i) {
-                seeds[i].vy += gravity;
-                seeds[i].x += seeds[i].vx;
-                seeds[i].y += seeds[i].vy;
-                seeds[i].z += seeds[i].vz;
-                if (frames - seeds[i].born > seedLife) {
-                    splode(seeds[i].x, seeds[i].y, seeds[i].z);
-                    seeds.splice(i, 1);
-                }
-            }
-            for (i = 0; i < sparks.length; ++i) {
-                if (sparks[i].alpha > 0 && sparks[i].radius > 5) {
-                    sparks[i].alpha -= .01;
-                    sparks[i].radius /= 1.02;
-                    sparks[i].vy += gravity;
-                    point = new Object();
-                    point.x = sparks[i].x;
-                    point.y = sparks[i].y;
-                    point.z = sparks[i].z;
-                    if (sparks[i].trail.length) {
-                        x = sparks[i].trail[sparks[i].trail.length - 1].x;
-                        y = sparks[i].trail[sparks[i].trail.length - 1].y;
-                        z = sparks[i].trail[sparks[i].trail.length - 1].z;
-                        d = ((point.x - x) * (point.x - x) + (point.y - y) * (point.y - y) + (point.z - z) * (point.z - z));
-                        if (d > 9) {
-                            sparks[i].trail.push(point);
-                        }
-                    } else {
-                        sparks[i].trail.push(point);
-                    }
-                    if (sparks[i].trail.length > 5) sparks[i].trail.splice(0, 1);
-                    sparks[i].x += sparks[i].vx;
-                    sparks[i].y += sparks[i].vy;
-                    sparks[i].z += sparks[i].vz;
-                    sparks[i].vx /= 1.075;
-                    sparks[i].vy /= 1.075;
-                    sparks[i].vz /= 1.075;
-                } else {
-                    sparks.splice(i, 1);
-                }
-            }
-            p = Math.atan2(playerX, playerZ);
-            d = Math.sqrt(playerX * playerX + playerZ * playerZ);
-            d += Math.sin(frames / 80) / 1.25;
-            t = Math.sin(frames / 200) / 40;
-            playerX = Math.sin(p + t) * d;
-            playerZ = Math.cos(p + t) * d;
-            yaw = pi + p + t;
-        }
-
-        function rgb(col) {
-            var r = parseInt((.5 + Math.sin(col) * .5) * 16);
-            var g = parseInt((.5 + Math.cos(col) * .5) * 16);
-            var b = parseInt((.5 - Math.sin(col) * .5) * 16);
-            return "#" + r.toString(16) + g.toString(16) + b.toString(16);
-        }
-
-        function draw() {
-            ctx.clearRect(0, 0, cx * 2, cy * 2);
-            ctx.fillStyle = "#ff8";
-            for (i = -100; i < 100; i += 3) {
-                for (j = -100; j < 100; j += 4) {
-                    x = i; z = j; y = 25;
-                    point = rasterizePoint(x, y, z);
-                    if (point.d != -1) {
-                        size = 250 / (1 + point.d);
-                        d = Math.sqrt(x * x + z * z);
-                        a = 0.75 - Math.pow(d / 100, 6) * 0.75;
-                        if (a > 0) {
-                            ctx.globalAlpha = a;
-                            ctx.fillRect(point.x - size / 2, point.y - size / 2, size, size);
-                        }
-                    }
-                }
-            }
-            ctx.globalAlpha = 1;
-            for (i = 0; i < seeds.length; ++i) {
-                point = rasterizePoint(seeds[i].x, seeds[i].y, seeds[i].z);
-                if (point.d != -1) {
-                    size = 200 / (1 + point.d);
-                    ctx.fillRect(point.x - size / 2, point.y - size / 2, size, size);
-                }
-            }
-            point1 = new Object();
-            for (i = 0; i < sparks.length; ++i) {
-                point = rasterizePoint(sparks[i].x, sparks[i].y, sparks[i].z);
-                if (point.d != -1) {
-                    size = sparks[i].radius * 200 / (1 + point.d);
-                    if (sparks[i].alpha < 0) sparks[i].alpha = 0;
-                    if (sparks[i].trail.length) {
-                        point1.x = point.x;
-                        point1.y = point.y;
-                        switch (sparks[i].img) {
-                            case sparkPics[0]: ctx.strokeStyle = "#f84"; break;
-                            case sparkPics[1]: ctx.strokeStyle = "#84f"; break;
-                            case sparkPics[2]: ctx.strokeStyle = "#8ff"; break;
-                            case sparkPics[3]: ctx.strokeStyle = "#fff"; break;
-                            case sparkPics[4]: ctx.strokeStyle = "#4f8"; break;
-                            case sparkPics[5]: ctx.strokeStyle = "#f44"; break;
-                            case sparkPics[6]: ctx.strokeStyle = "#f84"; break;
-                            case sparkPics[7]: ctx.strokeStyle = "#84f"; break;
-                            case sparkPics[8]: ctx.strokeStyle = "#fff"; break;
-                            case sparkPics[9]: ctx.strokeStyle = "#44f"; break;
-                        }
-                        for (j = sparks[i].trail.length - 1; j >= 0; --j) {
-                            point2 = rasterizePoint(sparks[i].trail[j].x, sparks[i].trail[j].y, sparks[i].trail[j].z);
-                            if (point2.d != -1) {
-                                ctx.globalAlpha = j / sparks[i].trail.length * sparks[i].alpha / 2;
-                                ctx.beginPath();
-                                ctx.moveTo(point1.x, point1.y);
-                                ctx.lineWidth = 1 + sparks[i].radius * 10 / (sparks[i].trail.length - j) / (1 + point2.d);
-                                ctx.lineTo(point2.x, point2.y);
-                                ctx.stroke();
-                                point1.x = point2.x;
-                                point1.y = point2.y;
-                            }
-                        }
-                    }
-                    ctx.globalAlpha = sparks[i].alpha;
-                    ctx.drawImage(sparks[i].img, point.x - size / 2, point.y - size / 2, size, size);
-                }
-            }
-        }
-
-        function frame() {
-            if (frames > 100000) {
-                seedTimer = 0;
-                frames = 0;
-            }
-            frames++;
-            draw();
-            doLogic();
-            requestAnimationFrame(frame);
-        }
-
-        window.addEventListener("resize", () => {
-            canvas.width = canvas.clientWidth;
-            canvas.height = canvas.clientHeight;
-            cx = canvas.width / 2;
-            cy = canvas.height / 2;
-        });
-
-        initVars();
-        frame();
+            </div>
+            <div class="part rollInRight shang_img shang_img_b">
+                <img src="img/21.png" alt="">
+            </div>
+            <!-- 线条 -->
+            <div class="part top_Xial slideUp" data-delay="400"></div>
+            <div class="part top_Xial top_Xial_b slideDown" data-delay="400"></div>
+            <!--hua  金花  -->
+            <div class="part fadeIn jinse_hua" data-delay="1000"> </div>
+            <div class="part fadeIn jinse_hua jinse_hua_x" data-delay="1000"></div> 
+            <!-- 叶子 --> 
+            <div class="part slideLeft yezi_zuo"></div>
+            <div class="part slideLeft yezi_zuo yezi_zuo_zq"></div>
+            <div class="part slideDown yezi_zuo_xx"></div>
+            <div class="part slideDown yezi_zuo_yrx"></div>
+            <div class="part zoomIn piao_gif"  data-delay="1500" style="    width: 100%;
+            height: 100%;
+            top: 0;">
+                <img src="img/jingy.gif" alt="">
+            </div>
+            <!-- 中间 -->
+            <div class="part fadeIn kuang_nieg" data-delay="800">
+                <img src="img/19.png" alt="">
+            </div>
+            <div class="part fadeIn kuang_nieg" data-delay="1000">
+                <img class="nie" src="img/19.png" alt="">
+            </div>
+            <!-- 中间叶子 -->
+            <!-- <div class="part fadeIn yezi_zhongk" data-delay="1300"></div>
+            <div class="part fadeIn yezi_zhongk_x" data-delay="1300"></div> -->
+            <!-- 字 -->
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="2000">
+                <div class="rentx2">
+                    <img src="img/yiqi1.jpg" alt="">
+                </div>
+            </div> 
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="3000">
+                <div class="rentx2">
+                    <img src="img/yiqi2.jpg" alt="">
+                </div>
+            </div> 
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="4000">
+                <div class="rentx2">
+                    <img src="img/yiqi3.jpg" alt="">
+                </div>
+            </div> 
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="5000">
+                <div class="rentx2">
+                    <img src="img/yiqi4.jpg" alt="">
+                </div>
+            </div> 
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="6000">
+                <div class="rentx2">
+                    <img src="img/yiqi5.jpg" alt="">
+                </div>
+            </div> 
+            <div class="part zhongjiek_Ge rentx_kuang" data-delay="7000">
+                <div class="rentx2">
+                    <img src="img/yiqi6.jpg" alt="">
+                </div>
+            </div> 
+            <!-- 文字 -->
+            <div class="part xinniang_xinlang" data-delay="1800"   >
+                <p>金虎虎 -❤- 碧瑶瑶</p>
+                <dd style="    line-height: .4rem; padding-top:.2rem;">全世界都知道，我不在乎付出多少<br>我想这是幸福的写照</dd>
+                <!-- <span>You two are the prince and princess in a fairy tale and may you live happily everafter!</span> -->
+            </div>
+            <!--  --> 
+            <!-- 修改 -->
+            <div class="xiugai_nige" style="    left: .3rem;top: 5.8rem;"></div>
+            <!--  -->
+        </div>
+        <!--  -->
+        <div class="item item5">
+            <div class="part rollInLeft shang_img"> 
+                <img src="img/2.png" alt=""> 
+            </div>
+            <div class="part rollInRight shang_img shang_img_b">
+                <img src="img/21.png" alt="">
+            </div>
+            <!-- 线条 -->
+            <div class="part top_Xial slideUp" data-delay="400"></div>
+            <div class="part top_Xial top_Xial_b slideDown" data-delay="400"></div>
+            <!--hua  金花  -->
+            <div class="part fadeIn jinse_hua jinse_hua_no" data-delay="1000"> </div>
+            <div class="part fadeIn jinse_hua jinse_hua_x jinse_hua_no" data-delay="1000"></div> 
+            <!-- 叶子 --> 
+            <div class="part slideLeft yezi_zuo"></div>
+            <div class="part slideLeft yezi_zuo yezi_zuo_zq"></div>
+            <div class="part slideDown yezi_zuo_xx"></div>
+            <div class="part slideDown yezi_zuo_yrx"></div>
+       
+            <!-- 中间叶子 -->
+            <div class="part fadeIn yezi_zhongk yezi_zhongk_dier" data-delay="1300"></div> 
+            <!-- 字 -->
+            <div class="part zhongjiek_Ge zhongjiek_Ge_er" data-delay="1800">
+                <img src="img/9.png" alt="">
+            </div>
+            <div class="part zhongjiek_Ge zhongjiek_Ge_er" data-delay="1800">
+                <img class="nio" src="img/1.png" alt="">
+            </div>
+            <!-- h婚纱照 -->  
+            <div class="part nimen_img nimen_img_text slideDown"  data-delay="1800">
+                 <div class="hou_tupian">
+                    <p>当你看见这段话的时候也许是清晨，也许是酒后凌晨</p>
+                    <p>也许我还没睡，也许我还在等</p>
+                    <p>你不必害怕</p>
+                    <p>在你需要的时候，我会一直在</p> 
+                    <p>不知疲倦，不会厌烦。</p>
+                    <p>在你仰望星空的时候，我也在仰望你</p>
+                    <p>跟你在一起我总是变成话痨，爱和你分享我的故事</p>
+                    <p>你也不厌其烦听着我吹的牛批</p>
+                    <p>想了很多，打出来的字也没多少。最后还是那句话</p>
+                    <p>幸福的人从不晚睡，我想让你成为那个最幸福的人！</p>
+                    <p>圣诞节到了，我也没啥礼物可送</p>
+                    <p>用你的这句话，因为我要被圣诞老人装进口袋变成礼物送给你</p>
+                    <p class="an">
+                        <a href="yanhua.html">点击有惊喜</a>
+                    </p>
+                 </div>
+            </div>
+            <!-- 修改 -->
+            <!-- <div class="xiugai_nige"></div> -->
+            <!--  --> 
+        </div>
+        <!--  --> 
+    </div>
+    <script type="text/javascript" src="js/index_Zepto.js"></script> 
+    <script type="text/javascript" src="js/H5FullscreenPage.js"></script>
+    <script type="text/javascript">
+    
+    H5FullscreenPage.init({'type':2,'pageShow' : function(dom){ 
+        },'pageHide' : function(dom){
+            //console.log(dom);
+    }});
+    
     </script>
 </body>
-
 </html>
