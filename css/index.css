@@ -11,22 +11,43 @@ body {
     background-repeat: no-repeat;
     background-image: url(../img/indexImg.png);
 }
+@media (min-width: 641px) and (max-width:770px){
+	body .indexContainer{
+		min-width:70%;
+	}
+	body .about-me{
+		min-width:80%;
+	}
+}
 
+@media (min-width: 771px){
+	body .indexContainer{
+		min-width:40%;
+	}
+	body .about-me{
+		min-width:50%;
+	}
+}
 .indexContainer {
-    min-width: 40%;
     background-color: rgba(0,0,0,0.3);
     border-radius: 1.5em;
     color: #fefefe;
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
-    left: 30%;
-    top: 20%;
+    left: 50%;
+    top: 50%;
     width: auto;
+    height: auto;
+    max-height: 80%;
+    min-width: 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: height 1s ease;
+    transition: top 1s ease;
     padding: 1rem;
-}
-.about-me-title{
-    font-size: 1.6rem;
-    padding: 2rem;
 }
 .header-index h1 {
     font-size: 2.2rem;
@@ -70,7 +91,7 @@ body {
 }
 .index-footer {
     text-align: right;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
@@ -83,11 +104,42 @@ body {
     color: #000;
     background: #fff;
 }
-.about-me {
-    width: 980px;
+
+/* 关于我的 */
+.content-title {
+    font-size: 1.8rem;
+    padding: 2rem 0 1rem 0;
+    color: orange;
+    border-bottom: 1px solid #d3d3d3;
+}
+.indexContent {
+    width: 100%;
     height: 100%;
     background: #f5f5d5;
-    margin: 0 auto;
+}
+.about-me {
+    border-radius: 1.5em;
+    color: #000;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-height: 80%;
+    min-width: 90%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    transition: height 1s ease;
+    transition: top 1s ease;
+    padding: 1rem;
+}
+.about-me-title{
+    font-size: 1.6rem;
+    padding: 2rem 0 1rem 0;
 }
 .about-me h1 {
     text-align: center;
