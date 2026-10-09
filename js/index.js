@@ -1,7 +1,0 @@
-$(function() {
-    IndexUsJs();
-});
-
-function IndexUsJs() {
-   
-};
